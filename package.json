@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-custom-vault",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Custom Vault Manager for n8n",
   "keywords": [
     "n8n-community-node-package"
@@ -8,8 +8,8 @@
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Malik Naik",
+    "email": "malik@maliknaik.me"
   },
   "repository": {
     "type": "git",
@@ -33,12 +33,9 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/CustomVault/CustomVault.node.js"
     ]
   },
   "devDependencies": {

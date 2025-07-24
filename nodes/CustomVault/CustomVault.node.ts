@@ -3,11 +3,12 @@ import { IExecuteFunctions, INodeExecutionData, INodeType, INodeTypeDescription,
 
 export class CustomVault implements INodeType {
     description: INodeTypeDescription = {
-        displayName: 'Custom Vault - Malik',
-        name: 'CustomVault',
+        displayName: 'Custom Vault',
+        name: 'customVault',
         group: ['secrets'],
         version: 1,
         description: 'Get the custom vault description',
+        subtitle: 'Testing n8n custom nodes',
         inputs: [NodeConnectionType.Main],
         outputs: [NodeConnectionType.Main],
         defaults: {
@@ -18,13 +19,14 @@ export class CustomVault implements INodeType {
                 displayName: 'Resource',
                 type: 'options',
                 name: 'resource',
+                noDataExpression: true,
                 options: [
                     {
-                        name: 'Testing the resource',
+                        name: 'Testing the Resource',
                         value: 'someRandomValue'
                     },
                     {
-                        name: 'Solid value',
+                        name: 'Solid Value',
                         value: 'someSolidValue'
                     }
                 ],
